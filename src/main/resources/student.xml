@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<excel id="student" code="student" name="学生信息导入">
+  <!-- 列信息 -->
+  <colgroup>
+    <col index="A" width="17em"/>
+    <col index="B" width="17em"/>
+    <col index="C" width="17em"/>
+    <col index="D" width="17em"/>
+    <col index="E" width="17em"/>
+    <col index="F" width="17em"/>
+  </colgroup>
+  <!-- 定义标题：合并单元格-->
+  <title>
+    <tr height="16px">
+      <td rowspan="1" colspan="6" value="学生信息导入"/>
+    </tr>
+  </title>
+  <!-- 定义列名-->
+  <thead>
+    <tr height="16px">
+      <th value="编号"/>
+      <th value="姓名"/>
+      <th value="年龄"/>
+      <th value="性别"/>
+      <th value="出生日期"/>
+      <th value="爱好"/>
+    </tr>
+  </thead>
+  <!-- 定义数据区域单元格样式-->
+  <tbody>
+    <tr height="16px" firstrow="2" firstcol="0" repeat="5">
+      <td type="string" isnullable="false" maxlength="30"/> <!-- 用户编号-->
+      <td type="string" isnullable="false" maxlength="50"/> <!-- 姓名-->
+      <td type="numeric" format="##0" isnullable="false"/> <!-- 年龄-->
+      <td type="enum" format="男,女" isnullable="true"/> <!-- 性别-->
+      <td type="date" isnullable="false" maxlength="30"/> <!-- 出生日期-->
+      <td type="enum" format="足球,篮球,乒乓球" isnullable="false" maxlength="30"/> <!-- 爱好-->
+    </tr>
+  </tbody>
+</excel>

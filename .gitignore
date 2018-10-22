@@ -1,0 +1,19 @@
+.gradle
+*devLocal*
+classes
+build/
+data/
+!gradle/wrapper/gradle-wrapper.jar
+.DS_Store
+*.diff
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.epoch
+*.lck
+*.log.*
+*.log
+out/
